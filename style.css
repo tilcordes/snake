@@ -1,0 +1,55 @@
+*  {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #000000;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 1px solid #ffff00;
+  box-shadow: 0 0 4px #ffff00
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.score_board {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#score {
+  color: #ff0000;
+}
+
+#highscore {
+  color: #00ff00;
+}
+
+canvas {
+  border: 1px solid #ffffff;
+  background: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 650px) {
+    .score_board {
+      flex-direction: column;
+    }
+}
